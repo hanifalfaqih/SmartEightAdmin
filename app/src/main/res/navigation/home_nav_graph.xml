@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/announcementFragment">
+
+    <fragment
+        android:id="@+id/announcementFragment"
+        android:name="sch.id.snapan.smarteightadmin.ui.announcement.AnnouncementFragment"
+        android:label="@string/label_announcement"
+        tools:layout="@layout/fragment_announcement" >
+        <action
+            android:id="@+id/action_announcementFragment_to_announcementAddUpdateActivity"
+            app:destination="@id/announcementAddUpdateActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_announcementFragment_to_announcementDetailActivity"
+            app:destination="@id/announcementDetailActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="sch.id.snapan.smarteightadmin.ui.attendance.AttendanceFragment"
+        android:label="@string/label_presence"
+        tools:layout="@layout/fragment_attendance" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="sch.id.snapan.smarteightadmin.ui.user.UserFragment"
+        android:label="@string/label_user"
+        tools:layout="@layout/fragment_user" />
+
+    <activity
+        android:id="@+id/announcementAddUpdateActivity"
+        android:name="sch.id.snapan.smarteightadmin.ui.announcement.AnnouncementAddUpdateActivity"
+        android:label="activity_announcement_add_update"
+        tools:layout="@layout/activity_announcement_add_update" />
+    <activity
+        android:id="@+id/announcementDetailActivity"
+        android:name="sch.id.snapan.smarteightadmin.ui.announcement.AnnouncementDetailActivity"
+        android:label="activity_announcement_detail"
+        tools:layout="@layout/activity_announcement_detail" />
+</navigation>

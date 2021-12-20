@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/announcementFragment"
+        android:title="@string/label_announcement"
+        android:icon="@drawable/ic_baseline_campaign"/>
+
+    <item android:id="@+id/attendanceFragment"
+        android:title="@string/label_presence"
+        android:icon="@drawable/ic_baseline_format_list_bulleted"/>
+
+    <item android:id="@+id/userFragment"
+        android:title="@string/label_user"
+        android:icon="@drawable/ic_baseline_people"/>
+</menu>
